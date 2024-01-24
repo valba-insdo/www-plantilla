@@ -1,0 +1,75 @@
+<app-top-cards></app-top-cards>
+<!-- ============================================================== -->
+<!-- Sales chart -->
+<!-- ============================================================== -->
+<div class="row">
+  <div class="col-lg-7">
+    <app-sales-ratio></app-sales-ratio>
+  </div>
+  <div class="col-lg-5">
+    <app-feeds></app-feeds>
+  </div>
+</div>
+<!-- ============================================================== -->
+<!-- Sales chart -->
+<!-- ============================================================== -->
+<!-- images -->
+<!-- ============================================================== -->
+<div class="row">
+  <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+    <img class="threeD-image-effect" src="https://picsum.photos/id/669/300/300" alt="the back of random person">
+  </div>
+  <!-- column -->
+  <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+    <img class="threeD-image-effect" src="https://assets.codepen.io/1480814/pexels-pixabay-62655.jpg" alt="an eagle" style="--f:.12;--r:5px">
+  </div>
+  <!-- column -->
+  <div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
+    <img class="threeD-image-effect" src="https://picsum.photos/id/326/300/300" alt="a cup of something to drink, probably some tea" style="--f:.08;--r:20px">
+  </div>
+</div>
+<!-- ============================================================== -->
+<!-- images -->
+<!-- ============================================================== -->
+<!-- Table -->
+<!-- ============================================================== -->
+<div class="row">
+  <!-- column -->
+  <div class="col-lg-12">
+    <app-top-sellings></app-top-sellings>
+  </div>
+
+</div>
+<!-- ============================================================== -->
+<!-- Table -->
+<!-- ============================================================== -->
+<!-- Searchable Select -->
+<!-- ============================================================== -->
+<div class="row">
+  <!-- column -->
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body bg-white">
+        <!-- title -->
+        <h4 class="card-title">Ejemplo de seleccionar elemento con buscador</h4>
+        <h5 class="card-subtitle">Ejemplo con propiedad multiple a true</h5>
+        <!-- title -->
+        <div class="hoverDivEffect">
+          <ion-item (click)="searchableSelect.open()" tappable>
+            <ion-label>Opciones: </ion-label>
+            <custom-searchable-select [data]="dataList" [multiple]="true" itemTextField="name" (selectedChanged)="onSelectOptionChange($event)" #searchableSelect></custom-searchable-select>
+          </ion-item>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ============================================================== -->
+<!-- Searchable Select -->
+<!-- ============================================================== -->
+<!-- cards -->
+<!-- ============================================================== -->
+<app-blog-cards></app-blog-cards>
+<!-- ============================================================== -->
+<!-- cards -->
+<!-- ============================================================== -->
